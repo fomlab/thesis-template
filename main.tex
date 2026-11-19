@@ -1,0 +1,57 @@
+%% ============================================================================
+%% 論文テンプレート / Thesis template
+%%
+%% このテンプレートは、東京工業大学（現・東京科学大学）環境・社会理工学院 融合理工学系 カリキュラム委員会「特定課題研究 研究報告書の執筆様式について（ガイドライン）2021年度版」（2021年6月）をもとに作成したものです。大学や系が公式に配布しているテンプレートではありません。
+%%
+%% This template is based on "Guidelines in Preparing the Independent Research Project (IRP) report in English (for AY 2021)" (June 2021) by the GSEP faculty group and the Curriculum Committee, Department of Transdisciplinary Science and Engineering, School of Environment and Society, Tokyo Institute of Technology (now Institute of Science Tokyo). It is not an official template distributed by the university or the department.
+%%
+%% License: MIT (see LICENSE). Usage: see README.md.
+%% ============================================================================
+
+%% ---------------------------------------------------------------------------
+%% 設定 / Settings  ここだけ書き換えます / Edit only this block
+%% ---------------------------------------------------------------------------
+\documentclass[
+  ja,        % 言語 / language:   ja（日本語）または en（English）
+  bachelor,  % 種別 / kind:       bachelor（特定課題研究 報告書）または master（修士論文）
+]{labthesis}
+
+\title{論文の題目をここに書く}           % 題目 / title（改行は \\）
+\author{山田 太郎}                       % 名前 / name（英語は Given SURNAME: Taro YAMADA）
+\supervisor{○○ ○○ 教授}                % 指導教員 / supervisor（英語は Prof. Given SURNAME）
+\submitdate{2027}{1}                     % 提出年月 / submission {year}{month}
+\affiliation{%                           % 所属（英語のみ）/ affiliation (English only)
+  Department of Transdisciplinary Science and Engineering\\
+  School of Environment and Society\\
+  Institute of Science Tokyo}
+% \citationstyle{APA 形式}               % 引用形式の書き換え / citation style line
+% \thesiskind{修士論文}                  % 表紙の種別を自由に書くとき / custom kind on the cover
+
+%% 自分で使うパッケージはここに書きます / Add your own packages here
+% \usepackage{booktabs}
+
+%% ---------------------------------------------------------------------------
+%% 本文 / Document
+%% 本文は ja/ または en/ フォルダーにあります（言語の設定で切り替わります）。
+%% The text is in the folder ja/ or en/ (chosen by the language setting).
+%% ---------------------------------------------------------------------------
+\begin{document}
+
+\maketitle                 % 表紙 / title page
+\input{\textfolder/abstract}  % 要約 / abstract
+\tableofcontents           % 目次 / table of contents
+\listoffigures             % 図一覧 / list of figures
+\listoftables              % 表一覧 / list of tables
+
+\mainmatter                % ここから 1 ページ / page 1 starts here
+\input{\textfolder/chapter1}
+\input{\textfolder/chapter2}
+\input{\textfolder/chapter3}
+
+\bibliographystyle{jecon}  % 文献の形式 / reference style
+\bibliography{refs}        % 文献のファイル refs.bib / bibliography file refs.bib
+
+% \appendix                % 付録 / appendices
+% \input{\textfolder/appendix}
+
+\end{document}
