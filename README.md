@@ -4,6 +4,10 @@
 
 卒論（特定課題研究 報告書）と修論を LaTeX で書くためのテンプレートです。日本語と英語の両方で書けます。Overleaf にそのまま上げて使えます。
 
+[Overleaf で開く](https://www.overleaf.com/docs?snip_uri=https%3A%2F%2Fgithub.com%2Ffomlab%2Fthesis-template%2Freleases%2Flatest%2Fdownload%2Fthesis-template.zip)
+
+上のリンクから、このテンプレートを Overleaf の新しいプロジェクトとして開けます。うまくいかないときは、下の「使い方」のとおり ZIP を保存して Overleaf に上げてください。
+
 このテンプレートは、東京工業大学（現・東京科学大学）環境・社会理工学院 融合理工学系 カリキュラム委員会「特定課題研究 研究報告書の執筆様式について（ガイドライン）2021年度版」（2021年6月）をもとに作成したものです。大学や系が公式に配布しているテンプレートではありません。
 
 This template is based on "Guidelines in Preparing the Independent Research Project (IRP) report in English (for AY 2021)" (June 2021) by the GSEP faculty group and the Curriculum Committee, Department of Transdisciplinary Science and Engineering, School of Environment and Society, Tokyo Institute of Technology (now Institute of Science Tokyo). It is not an official template distributed by the university or the department.
@@ -157,6 +161,10 @@ MIT License（`LICENSE` を見てください）。ただし `jecon.bst`（作�
 ## English
 
 A LaTeX template for the bachelor's Independent Research Project (IRP) report and the master's thesis, in Japanese or English. Upload it to Overleaf as it is.
+
+[Open in Overleaf](https://www.overleaf.com/docs?snip_uri=https%3A%2F%2Fgithub.com%2Ffomlab%2Fthesis-template%2Freleases%2Flatest%2Fdownload%2Fthesis-template.zip)
+
+This link opens the template as a new project in Overleaf. If it does not work, download the ZIP and upload it to Overleaf as described in "How to use" below.
 
 This template is based on "Guidelines in Preparing the Independent Research Project (IRP) report in English (for AY 2021)" (June 2021) by the GSEP faculty group and the Curriculum Committee, Department of Transdisciplinary Science and Engineering, School of Environment and Society, Tokyo Institute of Technology (now Institute of Science Tokyo). It is not an official template distributed by the university or the department.
 
