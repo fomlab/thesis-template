@@ -36,11 +36,16 @@ This template is based on "Guidelines in Preparing the Independent Research Proj
 \author{山田 太郎}                       % 名前 / name（英語は Given SURNAME: Taro YAMADA）
 \supervisor{○○ ○○ 教授}                % 指導教員 / supervisor（英語は Prof. Given SURNAME）
 \submitdate{2027}{1}                     % 提出年月 / submission {year}{month}
+\affiliation{%                           % 所属（英語のみ）/ affiliation (English only)
+  Department of Transdisciplinary Science and Engineering\\
+  School of Environment and Society\\
+  Institute of Science Tokyo}
+% \citationstyle{APA 形式}               % 引用形式の書き換え / citation style line
 ```
 
 | 書き換えるところ | 書き方 |
 | --- | --- |
-| 言語 | 日本語は `ja`、英語は `en`。`en` にすると、本文は `en/` フォルダーのファイルを使い、書式も英語版のガイドラインに合わせたものになります。 |
+| 言語 | 日本語は `ja`、英語は `en`。`en` にすると、本文は `en/` フォルダーのファイルを使い、書式も英語版のガイドラインに合わせたものになります。表紙の題目、名前、指導教員は自動では英語にならないので、英語で書き直します。 |
 | 種別 | 卒論は `bachelor`（表紙が「特定課題研究　報告書」）、修論は `master`（表紙が「修士論文」）。 |
 | 題目、名前、指導教員 | 英語の名前は Taro YAMADA のように、名を先に、姓をすべて大文字で書きます。 |
 | 提出年月 | `{2027}{1}` は 2027年1月（英語では January 2027）。 |
@@ -76,7 +81,7 @@ This template is based on "Guidelines in Preparing the Independent Research Proj
 
 ### 図
 
-図のファイル（PDF、PNG、JPEG）を `figures/` に上げてから書きます。キャプションは図の下に置きます。
+図のファイル（PDF、PNG、JPEG）を `figures/` に上げてから書きます。ファイル名に空白があると図が出ないので、`fig1.png` のような名前にしてください。キャプションは図の下に置きます。
 
 ```latex
 \begin{figure}[htbp]
@@ -146,8 +151,9 @@ This template is based on "Guidelines in Preparing the Independent Research Proj
 
 ## うまくいかないとき
 
-- 赤いエラーが出たら、表示された行の近くで、`{` と `}` の数、`\` の打ち間違い、全角の空白や記号の混ざりを確かめます。
-- 「This template must be compiled with upLaTeX」と出たら、`latexmkrc` が消えています。このテンプレートの ZIP から `latexmkrc` だけを取り出し、Overleaf の「Upload」で同じ場所に上げ直します。
+- 赤いエラーが出たら、表示された行の近くで、`{` と `}` の数、`\` の打ち間違い、全角の空白や記号が混ざっていないかを確かめます。
+- 「This template must be compiled with upLaTeX」と出たら、`latexmkrc` が消えています。このテンプレートの ZIP から `latexmkrc` だけを取り出し、Overleaf の「Upload」で `main.tex` と同じ場所に上げ直します。
+- 図が出ず「Cannot determine size of graphic」と出たら、図のファイル名に空白がないかを確かめます。
 - 英語のガイドラインでは、付録まで含めて 25 ページ以上が目安です。
 
 ## ライセンス
@@ -160,7 +166,7 @@ MIT License（`LICENSE` を見てください）。ただし `jecon.bst`（作�
 
 ## English
 
-A LaTeX template for the bachelor's Independent Research Project (IRP) report and the master's thesis, in Japanese or English. Upload it to Overleaf as it is.
+A LaTeX template for the bachelor's Independent Research Project (IRP) report and the master's thesis, in Japanese or English. You can upload it to Overleaf as is.
 
 [Open in Overleaf](https://www.overleaf.com/docs?snip_uri=https%3A%2F%2Fgithub.com%2Ffomlab%2Fthesis-template%2Freleases%2Flatest%2Fdownload%2Fthesis-template.zip)
 
@@ -176,10 +182,10 @@ If your supervisor gives different instructions on the format, follow them.
 2. In [Overleaf](https://www.overleaf.com/), choose "New project" → "Existing project (.zip)" and upload the ZIP file in the "Upload Zipped Project" window.
 3. Click "Recompile" and check that the sample PDF appears.
 4. At the top of `main.tex`, change `ja` to `en`, choose `bachelor` or `master`, and fill in your title, name (Given SURNAME, e.g. Taro YAMADA), supervisor (e.g. Prof. Given SURNAME), submission year and month, and affiliation.
-5. Write your text in the files in the folder `en/`.
+5. Write your text in the files in the `en/` folder.
 
-The title page, abstract, table of contents, list of figures and list of tables have no page numbers, and the first page of Chapter 1 is Page 1. Figures, tables and equations are numbered by chapter. The examples above work in English mode too: `\figref{...}` gives "Fig. 2.1", `\tabref{...}` gives "Table 3.1", and `\eqref{...}` gives "Eq. (2.1)". To change the citation style line below the table of contents, remove the `%` before `\citationstyle{...}` and edit it. The guideline suggests at least 25 pages including appendices.
+The title page, abstract, table of contents, list of figures and list of tables have no page numbers, and the first page of Chapter 1 is page 1. Figures, tables and equations are numbered by chapter. The examples in the Japanese section above also work in English mode: `\figref{...}` gives "Fig. 2.1", `\tabref{...}` gives "Table 3.1", and `\eqref{...}` gives "Eq. (2.1)". To change the citation style line below the table of contents, remove the `%` before `\citationstyle{...}` and edit it. The guideline suggests at least 25 pages including appendices.
 
-If you see "This template must be compiled with upLaTeX", the file `latexmkrc` is missing: take it from the template's ZIP and upload it again to the top of the project.
+If you see "This template must be compiled with upLaTeX", the file `latexmkrc` is missing: take it from the template's ZIP and upload it again to the top level of the project (next to `main.tex`). If a figure does not appear and you see "Cannot determine size of graphic", remove any spaces from the figure's file name.
 
 License: MIT (see `LICENSE`). `jecon.bst` by Shiro Takeda is included unchanged under the LaTeX Project Public License 1.3.
