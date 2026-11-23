@@ -2,25 +2,25 @@
 
 [English version below](#english)
 
-卒論（特定課題研究 報告書）と修論を LaTeX で書くためのテンプレートです。日本語と英語の両方で書けます。Overleaf にそのまま上げて使えます。
+卒論（特定課題研究 報告書）・修論を LaTeX で作成するためのテンプレートです。日本語・英語の両方に対応しています。Overleaf での利用も可能です。
 
 [Overleaf で開く](https://www.overleaf.com/docs?snip_uri=https%3A%2F%2Fgithub.com%2Ffomlab%2Fthesis-template%2Freleases%2Flatest%2Fdownload%2Fthesis-template.zip)
 
-上のリンクから、このテンプレートを Overleaf の新しいプロジェクトとして開けます。うまくいかないときは、下の「使い方」のとおり ZIP を保存して Overleaf に上げてください。
+上のリンクから、このテンプレートを Overleaf の新しいプロジェクトとして開くことができます。リンクから開けない場合は、下の「使い方」の手順で ZIP ファイルを保存し、Overleaf にアップロードしてください。
 
 このテンプレートは、東京工業大学（現・東京科学大学）環境・社会理工学院 融合理工学系 カリキュラム委員会「特定課題研究 研究報告書の執筆様式について（ガイドライン）2021年度版」（2021年6月）をもとに作成したものです。大学や系が公式に配布しているテンプレートではありません。
 
 This template is based on "Guidelines in Preparing the Independent Research Project (IRP) report in English (for AY 2021)" (June 2021) by the GSEP faculty group and the Curriculum Committee, Department of Transdisciplinary Science and Engineering, School of Environment and Society, Tokyo Institute of Technology (now Institute of Science Tokyo). It is not an official template distributed by the university or the department.
 
-書式の細かい点で指導教員から指示があるときは、そちらに従ってください。
+書式の細部について指導教員から指示がある場合は、その指示に従ってください。
 
 ## 使い方
 
-1. このページの緑の「Code」ボタンから「Download ZIP」を選び、ZIP ファイルを保存します（展開しなくてかまいません）。
-2. [Overleaf](https://www.overleaf.com/) で「New project」→「Existing project (.zip)」を選び、「Upload Zipped Project」の画面で保存した ZIP ファイルを上げます。
-3. 「Recompile」を押して、見本の PDF ができることを確かめます。
-4. `main.tex` の冒頭の「設定」を自分のものに書き換えます。
-5. 本文は `ja/`（英語なら `en/`）フォルダーのファイルに書きます。
+1. このページの緑の「Code」ボタンから「Download ZIP」を選び、ZIP ファイルを保存します（展開する必要はありません）。
+2. [Overleaf](https://www.overleaf.com/) で「New project」→「Existing project (.zip)」を選び、「Upload Zipped Project」の画面で、保存した ZIP ファイルをアップロードします。
+3. 「Recompile」を押し、見本の PDF が表示されることを確認します。
+4. `main.tex` の冒頭にある「設定」を、自分の論文の内容に書き換えます。
+5. 本文は `ja/` フォルダー（英語の場合は `en/` フォルダー）のファイルに書きます。
 
 ## 設定
 
@@ -45,13 +45,13 @@ This template is based on "Guidelines in Preparing the Independent Research Proj
 
 | 書き換えるところ | 書き方 |
 | --- | --- |
-| 言語 | 日本語は `ja`、英語は `en`。`en` にすると、本文は `en/` フォルダーのファイルを使い、書式も英語版のガイドラインに合わせたものになります。表紙の題目、名前、指導教員は自動では英語にならないので、英語で書き直します。 |
-| 種別 | 卒論は `bachelor`（表紙が「特定課題研究　報告書」）、修論は `master`（表紙が「修士論文」）。 |
+| 言語 | 日本語は `ja`、英語は `en` を指定します。`en` にすると、本文には `en/` フォルダーのファイルが使われ、書式も英語版のガイドラインに準拠したものになります。表紙の題目、名前、指導教員は自動では英語に切り替わらないため、英語で書き直してください。 |
+| 種別 | 卒論は `bachelor`（表紙は「特定課題研究　報告書」）、修論は `master`（表紙は「修士論文」）を指定します。 |
 | 題目、名前、指導教員 | 英語の名前は Taro YAMADA のように、名を先に、姓をすべて大文字で書きます。 |
-| 提出年月 | `{2027}{1}` は 2027年1月（英語では January 2027）。 |
-| 所属 | 英語の表紙にだけ出ます。 |
-| 引用形式 | `% \citationstyle{APA 形式}` の `%` を外して書き換えます。日本語では最後のページに「引用形式：○○に準拠」、英語では目次の下に「Citation style: ○○」と出ます。 |
-| 見出しの形 | 既定は「第1章／1.1／1.1.1」です。`bachelor,` の下に `heading-simple,`（1．／1)／(1)）か `heading-setsu,`（第1章／第1節／第1項）を足すと変わります。 |
+| 提出年月 | `{2027}{1}` と書くと、2027年1月（英語では January 2027）と表示されます。 |
+| 所属 | 英語の表紙にのみ表示されます。 |
+| 引用形式 | `% \citationstyle{APA 形式}` の `%` を外して書き換えます。日本語では最後のページに「引用形式：○○に準拠」、英語では目次の下に「Citation style: ○○」と表示されます。 |
+| 見出しの形 | 既定は「第1章／1.1／1.1.1」です。`bachelor,` の下に `heading-simple,`（1．／1)／(1)）または `heading-setsu,`（第1章／第1節／第1項）を追加すると、見出しの形式を切り替えることができます。 |
 
 表紙、要約、目次、図一覧、表一覧にはページ番号が付かず、第1章の最初のページが 1 ページになります。図、表、式の番号は章ごとに自動で付きます。
 
@@ -59,17 +59,17 @@ This template is based on "Guidelines in Preparing the Independent Research Proj
 
 | ファイル | 中身 |
 | --- | --- |
-| `main.tex` | 設定と、全体の組み立て。 |
+| `main.tex` | 設定と全体の構成。 |
 | `ja/`、`en/` | 本文（要約 `abstract.tex`、各章 `chapter1.tex` など、付録 `appendix.tex`）。 |
 | `figures/` | 図のファイル。 |
 | `refs.bib` | 参考文献のデータ。 |
-| `labthesis.cls` | 書式の設定（普通は触りません）。 |
-| `latexmkrc` | Overleaf でのコンパイルの設定（消さないでください）。 |
-| `jecon.bst` | 参考文献の書式（普通は触りません）。 |
+| `labthesis.cls` | 書式の設定（通常は編集しません）。 |
+| `latexmkrc` | Overleaf でコンパイルするための設定（削除しないでください）。 |
+| `jecon.bst` | 参考文献の書式（通常は編集しません）。 |
 
 ## 書き方の例
 
-章を増やすときは、`ja/chapter4.tex` のようなファイルを作り、`main.tex` に `\input{\textfolder/chapter4}` の行を足します。
+章を追加する場合は、`ja/chapter4.tex` のようなファイルを作成し、`main.tex` に `\input{\textfolder/chapter4}` の行を追加します。
 
 ### 章・節・項
 
@@ -81,7 +81,7 @@ This template is based on "Guidelines in Preparing the Independent Research Proj
 
 ### 図
 
-図のファイル（PDF、PNG、JPEG）を `figures/` に上げてから書きます。ファイル名に空白があると図が出ないので、`fig1.png` のような名前にしてください。キャプションは図の下に置きます。
+図のファイル（PDF、PNG、JPEG のいずれか）を `figures/` にアップロードしてから、次のように書きます。ファイル名に空白が含まれていると図が表示されないため、`fig1.png` のような名前にしてください。キャプションは図の下に置きます。
 
 ```latex
 \begin{figure}[htbp]
@@ -92,7 +92,7 @@ This template is based on "Guidelines in Preparing the Independent Research Proj
 \end{figure}
 ```
 
-本文では `\figref{fig:sample}` と書くと「図 2.1」（英語では Fig. 2.1）になります。`\source{...}` は出典の行で、要らなければ消します。
+本文で `\figref{fig:sample}` と書くと、「図 2.1」（英語では Fig. 2.1）と表示されます。`\source{...}` は出典を示す行で、不要な場合は削除してください。
 
 ### 表
 
@@ -113,7 +113,7 @@ This template is based on "Guidelines in Preparing the Independent Research Proj
 \end{table}
 ```
 
-本文では `\tabref{tab:sample}` と書くと「表 3.1」（英語では Table 3.1）になります。
+本文で `\tabref{tab:sample}` と書くと、「表 3.1」（英語では Table 3.1）と表示されます。
 
 ### 式
 
@@ -124,11 +124,11 @@ This template is based on "Guidelines in Preparing the Independent Research Proj
 \end{equation}
 ```
 
-式の番号は「（式 2-1）」（英語では (Eq. 2.1)）の形で右に付きます。本文では `\eqref{eq:sample}` と書くと「式 2-1」（英語では Eq. (2.1)）になります。
+式の番号は、「（式 2-1）」（英語では (Eq. 2.1)）の形で式の右側に付きます。本文で `\eqref{eq:sample}` と書くと、「式 2-1」（英語では Eq. (2.1)）と表示されます。
 
 ### 文献の引用
 
-`refs.bib` に文献のデータを足します。Zotero などの文献管理ソフトから BibTeX 形式で書き出したものを貼り付けてもかまいません。日本語の文献には `yomi`（読み）を書くと、並び順が正しくなります。
+`refs.bib` に文献のデータを追加します。Zotero などの文献管理ソフトから BibTeX 形式で書き出したデータを貼り付けることも可能です。日本語の文献には `yomi`（読み）を記入すると、正しい順に並びます。
 
 ```bibtex
 @book{okumura2020,
@@ -140,25 +140,25 @@ This template is based on "Guidelines in Preparing the Independent Research Proj
 }
 ```
 
-本文ではこう引用します。
+本文では次のように引用します。
 
 ```latex
 \citet{okumura2020}によれば……      % → 奥村・黒木 (2020) によれば……
 ……である\citep{lamport1994}。      % → ……である (Lamport, 1994)。
 ```
 
-引用した文献だけが、本文の後の参考文献の一覧に載ります。
+本文の後の参考文献一覧には、引用した文献のみが表示されます。
 
 ## うまくいかないとき
 
-- 赤いエラーが出たら、表示された行の近くで、`{` と `}` の数、`\` の打ち間違い、全角の空白や記号が混ざっていないかを確かめます。
-- 「This template must be compiled with upLaTeX」と出たら、`latexmkrc` が消えています。このテンプレートの ZIP から `latexmkrc` だけを取り出し、Overleaf の「Upload」で `main.tex` と同じ場所に上げ直します。
-- 図が出ず「Cannot determine size of graphic」と出たら、図のファイル名に空白がないかを確かめます。
-- 英語のガイドラインでは、付録まで含めて 25 ページ以上が目安です。
+- 赤いエラーが出た場合は、表示された行の付近で、`{` と `}` の数、`\` の打ち間違い、全角の空白や記号の混入がないかを確認してください。
+- 「This template must be compiled with upLaTeX」というエラーは、`latexmkrc` がプロジェクトから削除されていると表示されます。このテンプレートの ZIP から `latexmkrc` だけを取り出し、Overleaf の「Upload」で `main.tex` と同じ場所にアップロードし直してください。
+- 図が表示されず「Cannot determine size of graphic」と表示された場合は、図のファイル名に空白が含まれていないかを確認してください。
+- 英語のガイドラインでは、付録を含めて 25 ページ以上が目安とされています。
 
 ## ライセンス
 
-MIT License（`LICENSE` を見てください）。ただし `jecon.bst`（作者：武田史郎）は LaTeX Project Public License 1.3 のファイルを手を加えずに同梱したもので、そのライセンスに従います（<https://github.com/ShiroTakeda/jecon-bst>）。
+MIT License（`LICENSE` を参照してください）。ただし、`jecon.bst`（作者：武田史郎）は LaTeX Project Public License 1.3 で配布されているファイルを改変せずに同梱したもので、同ライセンスに従います（<https://github.com/ShiroTakeda/jecon-bst>）。
 
 ---
 
@@ -166,7 +166,7 @@ MIT License（`LICENSE` を見てください）。ただし `jecon.bst`（作�
 
 ## English
 
-A LaTeX template for the bachelor's Independent Research Project (IRP) report and the master's thesis, in Japanese or English. You can upload it to Overleaf as is.
+A LaTeX template for the bachelor's Independent Research Project (IRP) report and the master's thesis, supporting both Japanese and English. It can also be used on Overleaf.
 
 [Open in Overleaf](https://www.overleaf.com/docs?snip_uri=https%3A%2F%2Fgithub.com%2Ffomlab%2Fthesis-template%2Freleases%2Flatest%2Fdownload%2Fthesis-template.zip)
 
