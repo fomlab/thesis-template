@@ -40,7 +40,7 @@ This template is based on "Guidelines in Preparing the Independent Research Proj
   Department of Transdisciplinary Science and Engineering\\
   School of Environment and Society\\
   Institute of Science Tokyo}
-% \citationstyle{APA 形式}               % 引用形式の書き換え / citation style line
+% \citationstyle{Harvard 形式（著者・年方式）}   % 引用形式の書き換え / citation style line
 ```
 
 | 書き換えるところ | 書き方 |
@@ -50,7 +50,7 @@ This template is based on "Guidelines in Preparing the Independent Research Proj
 | 題目、名前、指導教員 | 英語の名前は Taro YAMADA のように、名を先に、姓をすべて大文字で書きます。 |
 | 提出年月 | `{2027}{1}` と書くと、2027年1月（英語では January 2027）と表示されます。 |
 | 所属 | 英語の表紙にのみ表示されます。 |
-| 引用形式 | `% \citationstyle{APA 形式}` の `%` を外して書き換えます。日本語では最後のページに「引用形式：○○に準拠」、英語では目次の下に「Citation style: ○○」と表示されます。 |
+| 引用形式 | `% \citationstyle{Harvard 形式（著者・年方式）}` の `%` を外して書き換えます。日本語では最後のページに「引用形式：○○に準拠」、英語では目次の下に「Citation style: ○○」と表示されます。 |
 | 見出しの形 | 既定は「第1章／1.1／1.1.1」です。`bachelor,` の下に `heading-simple,`（1．／1)／(1)）または `heading-setsu,`（第1章／第1節／第1項）を追加すると、見出しの形式を切り替えることができます。 |
 
 表紙、要約、目次、図一覧、表一覧にはページ番号が付かず、第1章の最初のページが 1 ページになります。図、表、式の番号は章ごとに自動で付きます。
