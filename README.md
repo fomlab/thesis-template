@@ -50,7 +50,7 @@ This template is based on "Guidelines in Preparing the Independent Research Proj
 | 題目、名前、指導教員 | 英語の名前は Taro YAMADA のように、名を先に、姓をすべて大文字で書きます。 |
 | 提出年月 | `{2027}{1}` と書くと、2027年1月（英語では January 2027）と表示されます。 |
 | 所属 | 英語の表紙にのみ表示されます。 |
-| 引用形式 | `% \citationstyle{Harvard 形式（著者・年方式）}` の `%` を外して書き換えます。日本語では最後のページに「引用形式：○○に準拠」、英語では目次の下に「Citation style: ○○」と表示されます。 |
+| 引用形式 | 既定は Harvard 形式（著者・年方式）です。`% \citationstyle{Harvard 形式（著者・年方式）}` の `%` を外して書き換えます。日本語では最後のページに「引用形式：○○に準拠」、英語では目次の下に「Citation style: ○○」と表示されます。 |
 | 見出しの形 | 既定は「第1章／1.1／1.1.1」です。`bachelor,` の下に `heading-simple,`（1．／1)／(1)）または `heading-setsu,`（第1章／第1節／第1項）を追加すると、見出しの形式を切り替えることができます。 |
 
 表紙、要約、目次、図一覧、表一覧にはページ番号が付かず、第1章の最初のページが 1 ページになります。図、表、式の番号は章ごとに自動で付きます。
@@ -184,7 +184,7 @@ If your supervisor gives different instructions on the format, follow them.
 4. At the top of `main.tex`, change `ja` to `en`, choose `bachelor` or `master`, and fill in your title, name (Given SURNAME, e.g. Taro YAMADA), supervisor (e.g. Prof. Given SURNAME), submission year and month, and affiliation.
 5. Write your text in the files in the `en/` folder.
 
-The title page, abstract, table of contents, list of figures and list of tables have no page numbers, and the first page of Chapter 1 is page 1. Figures, tables and equations are numbered by chapter. The examples in the Japanese section above also work in English mode: `\figref{...}` gives "Fig. 2.1", `\tabref{...}` gives "Table 3.1", and `\eqref{...}` gives "Eq. (2.1)". To change the citation style line below the table of contents, remove the `%` before `\citationstyle{...}` and edit it. The guideline suggests at least 25 pages including appendices.
+The title page, abstract, table of contents, list of figures and list of tables have no page numbers, and the first page of Chapter 1 is page 1. Figures, tables and equations are numbered by chapter. The examples in the Japanese section above also work in English mode: `\figref{...}` gives "Fig. 2.1", `\tabref{...}` gives "Table 3.1", and `\eqref{...}` gives "Eq. (2.1)". The default citation style is Harvard style (author-date). To change the citation style line below the table of contents, remove the `%` before `\citationstyle{...}` and edit it. The guideline suggests at least 25 pages including appendices.
 
 If you see "This template must be compiled with upLaTeX", the file `latexmkrc` is missing: take it from the template's ZIP and upload it again to the top level of the project (next to `main.tex`). If a figure does not appear and you see "Cannot determine size of graphic", remove any spaces from the figure's file name.
 
